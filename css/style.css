@@ -1,5 +1,6 @@
 /* === font === */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&display=swap');
 /* === font === */
 *{
     margin:0;
@@ -9,7 +10,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-
+   
     font-weight: 400;
 }
 html{
@@ -81,15 +82,49 @@ img{
 .justify-center{
     justify-content:center;
 }
+.justify-space-between{
+    justify-content:space-between;
+}
 /* === Section === */
 section{
     padding:6rem 0rem;
 }
+/* === Navbar === */
+.navbar{
+    background:url(../images/top-header.png);
+    background-repeat:no-repeat;
+    
+  padding-top:1rem;
+  box-shadow: 10px 10px 10px #e6e6e6;
+  height:8rem;
+}
+.navbar__logo{}
+.navbar__logo__text{
+    font-family: 'Hanalei Fill', cursive;
+}
+.navbar__menu{}
+.navbar__ul{}
+.navbar__item{
+    list-style:none;
+}
+.navbar__link{
+    font-size:3rem;
+    background:linear-gradient(45deg,#FFA032,#FFC91B);
+    display:inline-block;
+    margin:0rem 1rem;
+    text-decoration:none;
+    padding:.5rem 2rem;
+    border-radius:1rem;
+    color:var(--light);
+    transition:.5s;
+}
+.navbar__link:hover{
+    background:linear-gradient(#FFC91B,#FFA032)
+}
 
 /* === Header Section === */
 .header{
-    background:url(../images/top-header.png);
-    background-repeat:no-repeat;
+    
     overflow:hidden;
 }
 .header__intro{
